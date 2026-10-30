@@ -1,0 +1,23 @@
+while True:
+    dicionario_do_adolescente = {
+        "tipo eh tipo ã tipo nada a ver": "ela não está bem mentalmente",
+        "six seven": "ele está tentando aumentar seu status social, mas infelizmente não consegue",
+        "pogger": "algo bom..."
+    }
+
+    print("~/~/~/~/~/~/~/~/~/~/~/~/~/~/~/~/~/~/~/~/~")
+    perguntas = input("Digite uma palavra moderna que você não entende (escreva todo a palavra em letras maiúsculas):")
+    if perguntas == 'mostrar dicionario':
+        print(dicionario_do_adolescente)
+    elif perguntas in dicionario_do_adolescente.keys():
+        print("palavra encontrada no dicionario de adolescentes!")
+    else:
+        print("palavra não encontrada")
+        pergunta_2 = input("você quer adicionar sua palavra à lista?")
+        if pergunta_2 == 'sim':
+            age = input("diga sua palavra:")
+            name = input("coloque sua descrição:")
+            dicionario_do_adolescente[age] = name
+        elif sla == 'não' or sla == 'nao':
+            print("ok")
+            break
